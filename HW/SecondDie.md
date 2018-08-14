@@ -24,4 +24,56 @@
 ```
 
 ## Практическая часть
-TODO
+
+### Задание 0
+Доделать функции
+```
+mySum
+myEq
+myGT
+myMul
+myFib
+myOdd
+myDec
+myToInt
+myToList
+```
+
+### Задание 1
+Написать функцию суммирующую вектора
+```
+myVectSum : Vect n Int -> Vect n Int -> Vect n Int
+myVectSum [1..5] [1..5] = [2, 4, 6, 8, 10]
+```
+
+### Задание 2
+Написать функцию myMap
+```
+myMap : (a -> b) -> Vect n a -> Vect n b
+myMap myToInt ((Succ Zero) :: (Succ (Succ Zero)) :: (Succ (Succ (Succ Zero))) :: Zero :: Nil) = [1, 2, 3, 0]
+```
+
+### Задание 3
+Написать функцию, находящую скалярное произведение двух векторов
+```
+scalarProduct : Vect n Int -> Vect n Int -> Int
+scalarProduct [1, 2, 3] [4, 5, 6] = 1 * 4 + 2 * 5 + 3 * 6 = 32
+```
+
+### Задание 4
+Написать функцию, находящую сумму элементов вектора
+```
+vectSum : Vect n Int -> Int
+```
+
+### Задание 5
+Напиште целочисленное деление
+```
+div : MyNut -> MyNut -> MyNut
+div (Succ (Succ (Succ (Succ Zero)))) (Succ (Succ (Succ Zero))) = Succ Zero
+```
+
+### Задание 6
+Прочитать 2 главу тайпдривендевелопментс и сделать все упражнения по ней
+Подсказки:
+после module Main используйте import Data.Vect
