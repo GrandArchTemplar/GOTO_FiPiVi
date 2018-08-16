@@ -52,4 +52,4 @@ d -- 4 ячейка
 Написать функцию, которая возвращает все 3 корня 
 ```
 solver : Double -> Double -> Double -> Double -> (Double, Double, Double)
-solver 1 3 3 1 = (1.0, 1.0, 1.0)
+solver 1 (0 - 3) 3 (0 - 1) = (1.0, 1.0, 1.0)
